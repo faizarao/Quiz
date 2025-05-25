@@ -1,0 +1,91 @@
+/* General Body and Text Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f2f5, #d9e2f1); /* Beautiful gradient */
+    color: #333;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header Styling with Animation */
+header {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    animation: fadeInHeader 1.5s ease-out; /* Fade-in animation */
+}
+
+/* Animation for Header */
+@keyframes fadeInHeader {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Navigation Bar Styling */
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    margin: 0 20px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Footer Styling with Fixed Position */
+footer {
+    background-color: #4CAF50; /* Green footer */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Shadow on top of footer */
+    animation: fadeInFooter 1.5s ease-out; /* Fade-in animation for footer */
+}
+
+/* Footer Text Animation */
+@keyframes fadeInFooter {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    animation: slideInUp 1s ease-out; /* Slide-in from the bottom animation */
+}
+
+@keyframes slideInUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Style for Links within Content */
+a {
+    color: #4CAF50; /* Green color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #45a049; /* Darker green on hover */
+    text-decoration: underline;
+}
